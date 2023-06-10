@@ -1,4 +1,4 @@
-const palindromes = function (string) {
+const palindromes = string => {
     string = string.toUpperCase(); 
     string = string.replace(/[^a-zA-Z0-9]/g, '');
     string = string.split('');

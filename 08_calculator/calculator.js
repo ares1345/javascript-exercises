@@ -1,12 +1,12 @@
-const add = function(a, b) {
+const add = (a, b) => {
 	return a + b;
 };
 
-const subtract = function(a, b) {
+const subtract = (a, b) => {
 	return a-b;
 };
 
-const sum = function(a) {
+const sum = a => {
   let total = 0;
 	for(let i = 0; i<= (a.length - 1); i++) {
     total += a[i]
@@ -15,7 +15,7 @@ const sum = function(a) {
   return total
 };
 
-const multiply = function(a) {
+const multiply = a => {
   let res = 1;
   for(i = 0; i<=(a.length) - 1; i++){
     res *= a[i];
@@ -23,11 +23,11 @@ const multiply = function(a) {
   return res
 };
 
-const power = function(a, b) {
+const power = (a, b) => {
 	return a**b
 };
 
-const factorial = function(a) {
+const factorial = a => {
   if(a <= 1){
     return 1;
   }
